@@ -43,3 +43,7 @@ $RECYCLE.BIN/
 *.msi
 *.msm
 *.msp
+
+.Rproj.user
+*.rds
+*.rproj
