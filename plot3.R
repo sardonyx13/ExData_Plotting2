@@ -2,11 +2,8 @@
 library(plyr)
 library(ggplot2)
 
-<<<<<<< HEAD
-png("plot3.png", width = 480, height = 480)
-=======
+
 NEI<- readRDS("summarySCC_PM25.rds")
->>>>>>> origin/master
 
 baltimore <- subset(NEI, fips == "24510", select = c(Emissions, year, type))
 
@@ -24,8 +21,4 @@ g <- ggplot(data, aes(y = Emissions, x = factor(year))) +
      scale_x_discrete("Year")
 print(g)
 
-<<<<<<< HEAD
 dev.off()
-=======
-dev.off()
->>>>>>> origin/master
